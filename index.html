@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Lu Portfolio</title>
+    
+    <!-- Website Favicon / Browser Tab Icon -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    
+    <!-- Import Inter and JetBrains Mono from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="profile-section">
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Jeremy Lu">
+            </div>
+            
+            <div class="name-title-wrapper">
+                <img src="logo.png" alt="Logo" class="inline-logo">
+                <h1>Jeremy Lu</h1>
+            </div>
+            
+            <!-- Main Taglines -->
+            <p class="tagline">I build and apply tech in the additive manufacturing, sports, and medical space to make cool stuff.</p>
+            <p class="tagline last-tagline">I make complex problems simple, and I bring great ideas out of great teams.</p>
+            
+            <div class="nav-links-container">
+                <div class="nav-pill">
+                    <a href="#experience" class="btn-yellow">Experience</a>
+                    <a href="#projects" class="btn-red">Projects</a>
+                    <a href="#about" class="btn-blue">About</a>
+                    <a href="#contact" class="btn-green">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Work Experience Section -->
+            <h2 id="experience" class="section-title">00 // Work Experience</h2>
+            <div class="two-col-grid work-grid">
+                
+                <div class="project-card">
+                    <div class="project-thumbnail" onclick="openModal('myra')">
+                        <div class="project-bg" style="background-image: url('myra.jpg');"></div>
+                        <div class="project-info-pill">
+                            <span>myra vision // 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>Process Engineering Intern</strong> // developing medical devices & test methods</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail" onclick="openModal('luxcreo')">
+                        <div class="project-bg" style="background-image: url('luxcreo.jpg');"></div>
+                        <div class="project-info-pill">
+                            <span>luxcreo // 2024</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>Product Development Intern</strong> // creating new 3d printing workflows</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Projects Section -->
+            <h2 id="projects" class="section-title">01 // Projects</h2>
+            <div class="two-col-grid projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-thumbnail" onclick="openModal('hollister')">
+                        <div class="project-bg" style="background-image: url('hollister.png');"></div>
+                        <div class="project-info-pill">
+                            <span>hollister capstone // 2026</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>MechE Capstone</strong> // improving sleep for ostomates</p>
+                    </div>
+                </div>
+
+                <!-- LAYERVIEW CARD WITH VIDEO -->
+                <div class="project-card">
+                    <div class="project-thumbnail" onclick="openModal('layerview')">
+                        <!-- Looping Video Background -->
+                        <video class="project-video-bg" autoplay loop muted playsinline>
+                            <source src="layerview.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-info-pill">
+                            <span>layerview // 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>Industry 4.0 Manufacturing</strong> // self repairing FDM 3d printer</p>
+                    </div>
+                </div>
+
+                <!-- INJECTION MOLDING TURTLE CARD -->
+                <div class="project-card">
+                    <div class="project-thumbnail" onclick="openModal('turtle')">
+                        <div class="project-bg" style="background-image: url('turtle.jpg');"></div>
+                        <div class="project-info-pill">
+                            <span>injection molded turtle // 2026</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>Product Design & Engineering</strong> // Injection Molded Toy Design and manufacturing</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail" onclick="openModal('footwear')">
+                        <div class="project-bg" style="background-image: url('footwear.jpg');"></div>
+                        <div class="project-info-pill">
+                            <span>footwear design sketches</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>Footwear Concept Art</strong> // exploratory sketching and functional design</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Combined About & Contact Section -->
+        <section id="about" class="about-me-section">
+            <h2 class="section-title">02 // About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="profile-pic-large">
+                        <img src="profile.jpg" alt="Jeremy Lu">
+                    </div>
+                    <h3 class="greeting">Hi, I'm Jeremy,</h3>
+                    
+                    <div class="school-info">
+                        <img src="northwestern.png" alt="Northwestern" class="nu-logo">
+                        <span class="school-text">Northwestern // MechE // Design</span>
+                    </div>
+                    
+                    <div class="location-info">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        CHI / SF
+                    </div>
+                </div>
+
+                <div class="about-right" id="contact">
+                    <h3>About me</h3>
+                    <p>I'm passionate about exploring the intersection between advanced manufacturing and functional design, especially when applied to sports science and product creation.</p>
+                    <p>Growing up all over Asia and the US has given me experiences ranging from traditional footwear manufacturing to cutting edge additive manufacturing tech. I'm interested in applying these experiences to innovative product creation.</p>
+                    
+                    <div class="contact-prompt">
+                        <h4>Let's connect</h4>
+                        <p>Have a question or want to chat about a project? Feel free to reach out.</p>
+                    </div>
+
+                    <div class="about-action-btns">
+                        <a href="jeremylu_resume.pdf" target="_blank" class="action-pill pill-yellow">Resume</a>
+                        <a href="mailto:jwlu920@gmail.com" class="action-pill pill-green">Email</a>
+                        <a href="https://www.linkedin.com/in/jeremy-lu-b893a4215/" target="_blank" class="action-pill pill-blue">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- THE MODAL OVERLAY -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="defaultCloseBtn" onclick="closeModal()">&times;</span>
+            <div id="modalHeader" class="modal-header-color"></div>
+            <div class="modal-body" id="modalBodyContainer">
+                <h2 id="modalTitle">Project Title</h2>
+                <div id="modalDescription" class="modal-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        const projectData = {
+            'myra': {
+                isCustom: true,
+                title: '',
+                color: '',
+                description: `
+                    <div class="myra-case-study">
+                        <div class="myra-header">
+                            <img src="myra_logo.png" alt="Myra Vision Logo" class="myra-logo" style="margin-top: -38px; margin-bottom: -38px; height: 240px; width: auto;">
+                            <p class="myra-mono">medical device // manufacturing // process engineering</p>
+                        </div>
+                        <hr class="myra-divider">
+                        <div class="myra-section-label">00 // my work</div>
+                        <div class="myra-intro-split">
+                            <div class="myra-metadata-left">
+                                <div class="myra-meta-row"><span class="myra-meta-label">Timeline</span><span class="myra-meta-val">July - September 2025</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Team</span><span class="myra-meta-val">Operations</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Role</span><span class="myra-meta-val">Process Engineering Intern</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Manager</span><span class="myra-meta-val">Mike Heck</span></div>
+                            </div>
+                            <div class="myra-skills-right">
+                                <span class="myra-meta-label myra-skills-label">Skills</span>
+                                <div class="myra-tags-wrapper">
+                                    <span class="myra-tag tag-yellow">product design</span>
+                                    <span class="myra-tag tag-red">product testing</span>
+                                    <span class="myra-tag tag-blue">process design</span>
+                                    <span class="myra-tag tag-green">fixture design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="myra_task.jpg" alt="Calibreye System Image"></div>
+                            <div class="myra-text-wrapper">
+                                <p>Myra Vision is a medical device company developing the Calibreye™ System, a novel aqueous shunt designed to treat glaucoma.</p>
+                                <h3 class="myra-h3">My Impact</h3>
+                                <p>This summer, I joined the operations team at Myra Vision, a Shifamed portfolio company.</p>
+                                <p>I developed and integrated an ASTM F88-compliant test methodology to validate medical implant packaging, which included designing custom fixtures and tooling for high-accuracy seal strength testing.</p>
+                                <p>I also designed and prototyped low-contact fixtures for silicone implant curing to reduce material handling, which cut shrinkage and deformation by 5%. Through comparative data analysis, I validated these designs to improve overall process consistency and projected product yield.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">01 // about myra</div>
+                        <div class="myra-about-content">
+                            <div class="myra-diagram-wrapper"><img src="myra_diagram.png" alt="Calibreye Device Diagram"></div>
+                            <p class="myra-about-text">Myra Vision is a medical device company developing the Calibreye™ Titratable Glaucoma Therapy System, a novel aqueous shunt designed to treat moderate to advanced glaucoma.</p>
+                            <p class="myra-about-text" style="margin-top: 1rem;">Learn more about <a href="https://myravision.com" target="_blank" class="myra-email-link">Myra Vision</a></p>
+                        </div>
+                        <div class="myra-section-label">02 // want to learn more?</div>
+                        <div class="myra-confidential-card">
+                            <div class="myra-confidential-text">
+                                <p>This work is confidential.<br><a href="mailto:jwlu920@gmail.com" class="myra-email-link">Email</a> me if you would like to learn about what I did.</p>
+                            </div>
+                            <div class="myra-lock-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            
+            'luxcreo': {
+                isCustom: true,
+                title: '',
+                color: '',
+                description: `
+                    <div class="myra-case-study">
+                        <div class="myra-header">
+                            <img src="luxcreo_logo.png" alt="LuxCreo Logo" class="myra-logo" style="margin-top: 2rem; margin-bottom: 2rem;">
+                            <p class="myra-mono">additive manufacturing // medical device // R&D</p>
+                        </div>
+                        <hr class="myra-divider">
+                        <div class="myra-section-label">00 // my work</div>
+                        <div class="myra-intro-split">
+                            <div class="myra-metadata-left">
+                                <div class="myra-meta-row"><span class="myra-meta-label">Timeline</span><span class="myra-meta-val">July - September 2024</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Team</span><span class="myra-meta-val">R&D</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Role</span><span class="myra-meta-val">Product Development Intern</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Manager</span><span class="myra-meta-val">Raj Shakay</span></div>
+                            </div>
+                            <div class="myra-skills-right">
+                                <span class="myra-meta-label myra-skills-label">Skills</span>
+                                <div class="myra-tags-wrapper">
+                                    <span class="myra-tag tag-yellow">3D printing</span>
+                                    <span class="myra-tag tag-red">workflow design</span>
+                                    <span class="myra-tag tag-blue">rapid prototyping</span>
+                                    <span class="myra-tag tag-green">product testing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="luxcreo_task.png" alt="LuxCreo Machine Process"></div>
+                            <div class="myra-text-wrapper">
+                                <p>LuxCreo is a leader in high-speed, precision 3D printing solutions for the dental and medical industries.</p>
+                                <h3 class="myra-h3">My Impact</h3>
+                                <p>At LuxCreo, I joined the R&D team, where I developed and validated a 3D-printed dental night-guard workflow that cut print and post-processing time by 50% while maintaining strict accuracy and compliance.</p>
+                                <p>Additionally, I designed and tested ten iterations of a compact tool to help remove dental models from thermoformed aligners. By working with both large-scale labs and small clinics to integrate these tools, I reduced post-processing time by 40% and allowed for the reuse of dental models.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">01 // about luxcreo</div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="luxcreo_about.jpg" alt="LuxCreo Team Booth"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">About LuxCreo</h3>
+                                <p>LuxCreo is an additive manufacturing company specializing in high-speed, high-precision 3D printing solutions, most notably for the dental and medical industries.</p>
+                                <p>Learn more about <a href="https://luxcreo.com" target="_blank" class="myra-email-link">LuxCreo</a></p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">02 // want to learn more?</div>
+                        <div class="myra-confidential-card">
+                            <div class="myra-confidential-text">
+                                <p>This work is confidential.<br><a href="mailto:jwlu920@gmail.com" class="myra-email-link">Email</a> me if you would like to learn about what I did.</p>
+                            </div>
+                            <div class="myra-lock-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+
+            'hollister': {
+                isCustom: true,
+                title: '',
+                color: '',
+                description: `
+                    <div class="myra-case-study">
+                        <div class="myra-header">
+                            <img src="hollister_logo.jpg" alt="Hollister Logo" class="myra-logo" style="margin-top: 2rem; margin-bottom: 2rem;">
+                            <p class="myra-mono">medical device // capstone project // product design</p>
+                        </div>
+                        <hr class="myra-divider">
+                        <div class="myra-section-label">00 // project brief</div>
+                        <div class="myra-intro-split">
+                            <div class="myra-metadata-left">
+                                <div class="myra-meta-row"><span class="myra-meta-label">Timeline</span><span class="myra-meta-val">September 2025 - March 2026</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Role</span><span class="myra-meta-val">Prototyping Lead</span></div>
+                                <div class="myra-meta-row" style="align-items: flex-start;">
+                                    <span class="myra-meta-label">Team</span>
+                                    <span class="myra-meta-val" style="line-height: 1.5;">Nicole Hahn, Jeremy Hwang, Ami Takamatsu, Nicole Constant, Austin Huang, Madeline Laffey</span>
+                                </div>
+                            </div>
+                            <div class="myra-skills-right">
+                                <span class="myra-meta-label myra-skills-label">Skills</span>
+                                <div class="myra-tags-wrapper">
+                                    <span class="myra-tag tag-yellow">user research</span>
+                                    <span class="myra-tag tag-red">prototyping</span>
+                                    <span class="myra-tag tag-blue">product design</span>
+                                    <span class="myra-tag tag-green">user testing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="hollister_task.jpg" alt="Hollister Project Overview"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">Ostomy Bag Accessory Development</h3>
+                                <p>We were approached by Hollister Inc. to improve the sleep of ostomates using their ostomy bags. Ostomates generally have part of their digestive tract removed due to other conditions that result in the need for ostomy bags.</p>
+                                <p>Leakage, excess gas, and general discomfort lead to sleep disruptions that negatively impact the quality of life of ostomates. Our team looked to tackle these problems by designing and prototyping accessories that helped resolve these symptoms and integrated with the existing hollister product line.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">01 // about hollister</div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="hollister_about.jpg" alt="Hollister Company Info"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">About Hollister</h3>
+                                <p>Hollister Incorporated develops and manufactures medical products specializing in ostomy, continence, and critical care. They are globally recognized for providing healthcare solutions like skin barriers, catheters, and fecal management systems designed to improve the quality of life for patients with chronic or acute medical conditions.</p>
+                                <p>Learn more about <a href="https://www.hollister.com/" target="_blank" class="myra-email-link">Hollister Inc.</a></p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">02 // want to learn more?</div>
+                        <div class="myra-confidential-card">
+                            <div class="myra-confidential-text">
+                                <p>This work is confidential.<br><a href="mailto:jwlu920@gmail.com" class="myra-email-link">Email</a> me if you would like to learn about what I did.</p>
+                            </div>
+                            <div class="myra-lock-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+
+            'layerview': {
+                isCustom: true,
+                title: '',
+                color: '',
+                description: `
+                    <div class="myra-case-study">
+                        <div class="myra-header">
+                            <img src="northwestern.png" alt="Northwestern Logo" class="myra-logo" style="margin-top: 2rem; margin-bottom: 2rem; height: 100px; width: auto;">
+                            <p class="myra-mono">industry 4.0 // northwestern university project // me 395</p>
+                        </div>
+                        <hr class="myra-divider">
+                        <div class="myra-section-label">00 // project brief</div>
+                        <div class="myra-intro-split">
+                            <div class="myra-metadata-left">
+                                <div class="myra-meta-row"><span class="myra-meta-label">Timeline</span><span class="myra-meta-val">December 2024 - March 2025</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Role</span><span class="myra-meta-val">Additive Manufacturing Specialist</span></div>
+                                <div class="myra-meta-row"><span class="myra-meta-label">Purpose</span><span class="myra-meta-val">Course Project</span></div>
+                                <div class="myra-meta-row" style="align-items: flex-start;">
+                                    <span class="myra-meta-label">Team</span>
+                                    <span class="myra-meta-val" style="line-height: 1.5;">Carter Taylor, Natalie Gurganus, Zihan Chen, Lisa Kovacs</span>
+                                </div>
+                            </div>
+                            <div class="myra-skills-right">
+                                <span class="myra-meta-label myra-skills-label">Skills</span>
+                                <div class="myra-tags-wrapper">
+                                    <span class="myra-tag tag-yellow">rapid prototyping</span>
+                                    <span class="myra-tag tag-red">CAD</span>
+                                    <span class="myra-tag tag-blue">teamwork</span>
+                                    <span class="myra-tag tag-green">g-code programming</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="layerview_task.jpg" alt="Layerview Project Overview"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">Self-Repairing FDM 3D Printer</h3>
+                                <p>For our ME 395 Industry 4.0 course project, our team developed Layerview, a conceptual self-repairing FDM 3D printer designed to autonomously detect and correct print failures in real-time.</p>
+                                <p>Our team utilised fringe projection, alongside a projector and camera, in order to generate 3d scans and point clouds of the print in progress. With this information, we compared the print in progress with model, allowing us to detect errors. By also comparing the printed geometry with the model, we could also repair top level defects that occurred.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">01 // my role</div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="layerview_role.jpg" alt="My Role in Layerview"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">Additive Manufacturing Specialist</h3>
+                                <p>My primary focus on the project was to utilise my experience working with 3d printers to integrate the fringe projection system with the 3D printer itself. This included working on part design, writing and modifying g-code to allow the printer to allows scans mid print, as well as ooperating the printer during the process to allow successful integration between the two systems.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">02 // project demo</div>
+                        <div class="myra-about-content">
+                            <p style="margin-bottom: 1.5rem; line-height: 1.6; color: #4b5563;">below is the a demonstration of the system working. The printer prints out a coin with missing geometry that is scanned. The program identifies this missing geometry and successsfully repairs it.</p>
+                            <div class="myra-diagram-wrapper" style="padding: 0; overflow: hidden; background: #e5e7eb; border: none;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                                    <source src="layerview.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">03 // slide deck</div>
+                        <div class="myra-confidential-card">
+                            <div class="myra-confidential-text">
+                                <p>Want to see our full engineering process?<br><a href="layerview_deck.pdf" target="_blank" class="myra-email-link">View the final presentation PDF</a></p>
+                            </div>
+                            <div class="myra-lock-circle" style="background-color: #3b82f6;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            
+            'turtle': {
+                isCustom: true,
+                title: '',
+                color: '',
+                description: `
+                    <div class="myra-case-study">
+                        <div class="myra-header">
+                            <img src="northwestern.png" alt="Northwestern Logo" class="myra-logo" style="margin-top: 2rem; margin-bottom: 2rem; height: 100px; width: auto;">
+                            <p class="myra-mono">product design // injection molding // cnc machining</p>
+                        </div>
+                        <hr class="myra-divider">
+                        <div class="myra-section-label">00 // project brief</div>
+                        <div class="myra-intro-split">
+                            <div class="myra-metadata-left">
+                                <div class="myra-meta-row"><span class="myra-meta-label">Timeline</span><span class="myra-meta-val">January - March 2026</span></div>
+                                <div class="myra-meta-row" style="align-items: flex-start;">
+                                    <span class="myra-meta-label">Team</span>
+                                    <span class="myra-meta-val" style="line-height: 1.5;">Natalia Yepes, Tomasz Kreminski, Gabriela Norwood</span>
+                                </div>
+                            </div>
+                            <div class="myra-skills-right">
+                                <span class="myra-meta-label myra-skills-label">Skills</span>
+                                <div class="myra-tags-wrapper">
+                                    <span class="myra-tag tag-yellow">CAD</span>
+                                    <span class="myra-tag tag-red">CAM</span>
+                                    <span class="myra-tag tag-blue">mold design</span>
+                                    <span class="myra-tag tag-green">cnc</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="turtle_task.jpg" alt="Terpy the Turtle Project"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">Terpy the Turtle</h3>
+                                <p>For this project, our team was tasked with designing and manufacturing an injection molded toy that we would produce 20 copies of. We created Terpy the Turtle!. Throughout this process, we created models of our parts, the corresponding molds, which we ultimately machined and injection molded, using industry-standard design and manufacturing techniques.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">01 // design</div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="turtle_design.jpg" alt="Mold Design Process"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">Mold Design</h3>
+                                <p>We started the design process by sketching out concept art for our turtle, which we ultimately developed into 3D CAD models. From there we also drafted models of the molds, following standard mold design conventions and ensuring that we accounted for draft angles and nominal wall thicknesses.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">02 // manufacturing</div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper"><img src="turtle_cnc.jpg" alt="CNC Machining the Mold"></div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">CNC Machining & Toolpaths</h3>
+                                <p>After finalizing the mold design, we programmed the CAM toolpaths on NX to machine the aluminum blocks. We machined the molds over the course of a few days, properly setting up the CNC machines to ensure excellent surface finish that would translate into our final project. The final molds were then run on an injection molding machine, successfully producing physical iterations of Terpy.</p>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">03 // photo gallery</div>
+                        <div class="myra-about-content">
+                            <div style="display: flex; gap: 1rem; width: 100%;">
+                                <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div style="border-radius: 8px; overflow: hidden; background: #f3f4f6; aspect-ratio: 3/2;">
+                                        <img src="turtle_gallery_1.jpg" alt="CAD" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                                    </div>
+                                    <p style="text-align: center; font-size: 0.9rem; color: #6b7280; margin: 0;">CAD</p>
+                                </div>
+                                <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div style="border-radius: 8px; overflow: hidden; background: #f3f4f6; aspect-ratio: 3/2;">
+                                        <img src="turtle_gallery_2.jpg" alt="resulting molds" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                                    </div>
+                                    <p style="text-align: center; font-size: 0.9rem; color: #6b7280; margin: 0;">resulting molds</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myra-section-label">04 // full report</div>
+                        <div class="myra-confidential-card">
+                            <div class="myra-confidential-text">
+                                <p>Want to read our full engineering report?<br><a href="turtle_report.pdf" target="_blank" class="myra-email-link">View the final report PDF</a></p>
+                            </div>
+                            <div class="myra-lock-circle" style="background-color: #3b82f6;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            
+            /* --- UPDATED FOOTWEAR MODAL --- */
+            'footwear': {
+                isCustom: true,
+                title: '',
+                color: '',
+                description: `
+                    <div class="myra-case-study">
+                        <!-- Header -->
+                        <div class="myra-header">
+                            <img src="northwestern.png" alt="Northwestern Logo" class="myra-logo" style="margin-top: 2rem; margin-bottom: 2rem; height: 100px; width: auto;">
+                            <p class="myra-mono">design sketching // northwestern university project // dsgn 321</p>
+                        </div>
+
+                        <hr class="myra-divider">
+
+                        <!-- Section 00: Project Brief -->
+                        <div class="myra-section-label">00 // project brief</div>
+                        
+                        <div class="myra-intro-split">
+                            <!-- Left: Timeline, Purpose -->
+                            <div class="myra-metadata-left">
+                                <div class="myra-meta-row">
+                                    <span class="myra-meta-label">Timeline</span>
+                                    <span class="myra-meta-val">September 2025 - March 2026</span>
+                                </div>
+                                <div class="myra-meta-row">
+                                    <span class="myra-meta-label">Purpose</span>
+                                    <span class="myra-meta-val">Class Project</span>
+                                </div>
+                            </div>
+
+                            <!-- Right: Skills / Tags -->
+                            <div class="myra-skills-right">
+                                <span class="myra-meta-label myra-skills-label">Skills</span>
+                                <div class="myra-tags-wrapper">
+                                    <span class="myra-tag tag-yellow">sketching</span>
+                                    <span class="myra-tag tag-blue">industrial design</span>
+                                    <span class="myra-tag tag-green">ideation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper" style="border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb;">
+                                <img src="footwear_task.jpg" alt="Olympic Weightlifting Shoe Outline">
+                            </div>
+                            <div class="myra-text-wrapper">
+                                <h3 class="myra-h3">Olympic Weightlifting Shoe Design</h3>
+                                <p>This shoe was designed as part of DSGN 320: Intro to Industrial Design methods and is my favorite project to come out of the class. The Wreath Olympic Weightlifting shoes immediately stand out from the futuristic angular designs commonly seen in the world of weightlifting shoes today with its classical architectural inspired design.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section 01: Ideation -->
+                        <div class="myra-section-label">01 // ideation</div>
+                        <div class="myra-about-content">
+                            <!-- Flexbox grid for Audit Board & Mood Board -->
+                            <div style="display: flex; gap: 1rem; width: 100%; margin-bottom: 1.5rem;">
+                                <div style="flex: 1; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                    <img src="footwear_audit.png" alt="Audit Board" style="width: 100%; height: auto; display: block;">
+                                </div>
+                                <div style="flex: 1; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                    <img src="footwear_mood.png" alt="Mood Board" style="width: 100%; height: auto; display: block;">
+                                </div>
+                            </div>
+                            <p style="margin-bottom: 1rem; color: #4b5563; line-height: 1.6;">I created a mood board and audit board in order to provide structure to the ideation process. The audit board focused mostly on Olympic weightlifting shoes but also used general footwear such as the Adidas 4DFWD, which utilized resin 3D Printing as part of a unique midsole design. I also chose to include other crossfit shoes, such as the Nike Metcon 3 and 9, two of my personal favorite exercise shoes in recent history.</p>
+                            <p style="color: #4b5563; line-height: 1.6;">The Mood board was focused on presenting motifs from ancient Greece that I wanted to convey, in particular the columns seen in many of their structures. I also wanted to include mythical influences such as Sisyphus and Atlas, as I felt there was some symbolism to explore comparing weightlifting to their stories.</p>
+                        </div>
+
+                        <!-- Section 02: Initial Sketches -->
+                        <div class="myra-section-label">02 // initial sketches</div>
+                        <div class="myra-split-content">
+                            <div class="myra-image-wrapper" style="border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                <img src="footwear_initial.jpg" alt="Initial Sketches Grid">
+                            </div>
+                            <div class="myra-text-wrapper">
+                                <p>I created a variety of sketches, trying to tie in all the various ideas and concepts from the mood board above. I experimented with the leather sandal aesthetic, which I didn't find effective. Instead, I pivoted towards incorporating more architectural influences in the designs.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section 03: Next Steps -->
+                        <div class="myra-section-label">03 // next steps</div>
+                        <div class="myra-about-content">
+                            <!-- Flexbox grid for the two focused sketches -->
+                            <div style="display: flex; gap: 1rem; width: 100%; margin-bottom: 1.5rem;">
+                                <div style="flex: 1; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                    <img src="footwear_next1.jpg" alt="Refined Sketch 1" style="width: 100%; height: auto; display: block;">
+                                </div>
+                                <div style="flex: 1; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                    <img src="footwear_next2.jpg" alt="Refined Sketch 2" style="width: 100%; height: auto; display: block;">
+                                </div>
+                            </div>
+                            <p style="color: #4b5563; line-height: 1.6; margin-bottom: 1.5rem;">Out of the various ideas developed further, one stood out to me. I felt that this concept brought a sense of elegance to the sport that a casual viewer may struggle to find when watching Olympic weightlifting.</p>
+                            <div style="border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                <img src="footwear_next2.jpg" alt="Refined Sketch 2 (Detailed)" style="width: 100%; height: auto; display: block;">
+                            </div>
+                        </div>
+
+                        <!-- Section 04: Final Design -->
+                        <div class="myra-section-label">04 // final design</div>
+                        <div class="myra-about-content">
+                            <div style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff;">
+                                <img src="footwear_task.jpg" alt="Final Colored Design with Materials" style="width: 100%; height: auto; display: block;">
+                            </div>
+                            <p style="color: #4b5563; line-height: 1.6;">The standout features of the design are the midsole that are symbolic of the strength and stability that the shoes bring. I also used a variety of textures and materials to add depth to the upper, including the embroidered laurel wreath and Olympic logo placed on the heel. The primary material chosen was white leather, uncommon in trainers and running shoes, with synthetic materials being much more prevalent. However, with weightlifting not being an endurance sport, I believe that the heavier leather was acceptable. It would also help create a different wear experience as the shoe becomes more and more broken in. Finally, the clasp across the upper also features a small metal pin of the Olympic rings that ties the entire design together.</p>
+                        </div>
+
+                    </div>
+                `
+            }
+        };
+
+        const modal = document.getElementById("projectModal");
+
+        function openModal(projectId) {
+            const data = projectData[projectId];
+            if(data) {
+                if(data.isCustom) {
+                    document.getElementById("modalHeader").style.display = "none";
+                    document.getElementById("modalTitle").style.display = "none";
+                    document.getElementById("modalBodyContainer").style.padding = "0";
+                    
+                    document.getElementById("defaultCloseBtn").style.display = "flex";
+                } else {
+                    document.getElementById("modalHeader").style.display = "block";
+                    document.getElementById("modalTitle").style.display = "block";
+                    document.getElementById("defaultCloseBtn").style.display = "flex";
+                    document.getElementById("modalBodyContainer").style.padding = "2.5rem";
+                    document.getElementById("modalTitle").innerText = data.title;
+                    document.getElementById("modalHeader").style.backgroundColor = data.color;
+                }
+
+                document.getElementById("modalDescription").innerHTML = data.description;
+                
+                // Display the modal BEFORE trying to reset scroll positions
+                modal.style.display = "flex";
+                
+                // Force scroll positions back to the top now that element has layout
+                modal.scrollTop = 0;
+                const modalContent = document.querySelector('.modal-content');
+                if (modalContent) modalContent.scrollTop = 0;
+                const modalBodyContainer = document.getElementById('modalBodyContainer');
+                if (modalBodyContainer) modalBodyContainer.scrollTop = 0;
+                
+                setTimeout(() => { modal.style.opacity = "1"; }, 10);
+                
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden"; 
+            } else {
+                alert("Project details coming soon!");
+            }
+        }
+
+        function closeModal() {
+            modal.style.opacity = "0";
+            setTimeout(() => { 
+                modal.style.display = "none"; 
+                document.body.style.overflow = ""; 
+                document.documentElement.style.overflow = ""; 
+            }, 300);
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
